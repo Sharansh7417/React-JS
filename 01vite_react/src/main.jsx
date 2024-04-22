@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-// import App from './App.jsx'
+import App from './App.jsx'
 
 
 // const reactElement={   //REACT does not expect element in this form
@@ -16,13 +16,14 @@ const anotherElement=(
   <a href='https://google.com'>google</a>
 )
 
+const anotherName='sharansh'
 
-const object= React.createElement(  //React expects object in this way
+const object= React.createElement(  //React expects element in this way
   'a',{href:'https://google.com',target:'_blank'},
-  'Click here to visit google'
+  'Click here to visit google',
 )
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   
- anotherElement   
+ anotherElement
 )
